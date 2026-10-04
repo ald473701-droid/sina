@@ -37,9 +37,9 @@ CARD_NAME = "حبیب صادقی"
 REFERRAL_BONUS = 5000                      # هدیه هر رفرال
 
 # اطلاعات پنل مرزبان (همه کانفیگ‌ها از این پنل ساخته می‌شوند)
-PANEL_URL = "https://marzban-panel-production-7c00.up.railway.app"
-PANEL_USERNAME = "admin"
-PANEL_PASSWORD = "12345678sina"
+PANEL_URL = "https://fast.alihapp.com:8000"
+PANEL_USERNAME = "Hdheh"
+PANEL_PASSWORD = "584tgQ!S%Ljt"
 
 # محدودیت‌ها و تنظیمات جدید
 MAX_PENDING_ORDERS = 2          # حداکثر سفارش در انتظار همزمان برای هر کاربر
