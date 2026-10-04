@@ -10597,17 +10597,17 @@ async def admin_panel_pass(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["panel_pass"] = password
 
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🇳🇱 هلند (پاسارگاد)", callback_data="panel_type_holland")],
-        [InlineKeyboardButton("🌐 مولتی (سنایی)", callback_data="panel_type_multi")],
-        [InlineKeyboardButton("💎 نامحدود (مرزبان)", callback_data="panel_type_unlimited")],
+        [InlineKeyboardButton("تانل🚀", callback_data="panel_type_holland")],
+        [InlineKeyboardButton("🌐 مولتی", callback_data="panel_type_multi")],
+        [InlineKeyboardButton("💎 نامحدود", callback_data="panel_type_unlimited")],
         [InlineKeyboardButton("🧪 اکانت تست", callback_data="panel_type_test")],
         [back_button("admin_panels")]
     ])
     await update.message.reply_text(
         "این پنل برای چه موردی استفاده شود؟\n\n"
-        "🇳🇱 هلند → پنل پاسارگاد\n"
-        "🌐 مولتی → پنل سنایی\n"
-        "💎 نامحدود → پنل مرزبان\n"
+        "⚡ تانل → پنل پاسارگاد\n"
+        "🌐 مولتی → پنل  پاسارگاد\n"
+        "💎 نامحدود → پنل  پاسارگاد\n"
         "🧪 تست → اکانت تست",
         reply_markup=kb
     )
@@ -10638,7 +10638,7 @@ async def admin_panel_type(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await db.commit()
 
     type_names = {
-        "holland": "🇳🇱 هلند (پاسارگاد)",
+        "Tuneel": " تانل🚀🎮",
         "multi": "🌐 مولتی (سنایی)",
         "unlimited": "💎 نامحدود (مرزبان)",
         "test": "🧪 اکانت تست",
