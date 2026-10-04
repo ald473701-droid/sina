@@ -2081,7 +2081,7 @@ async def buy_service(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🇳🇱 سرور هلند", callback_data="server_holland")],
+        [InlineKeyboardButton("سرویس تانل ⚡🚀", callback_data="server_holland")],
         [InlineKeyboardButton("🌐 سرویس مولتی لوکیشن (وبگردی)", callback_data="server_multi")],
         [InlineKeyboardButton("💎 سرویس نامحدود", callback_data="server_unlimited")],
         [InlineKeyboardButton("⚙️ پلن دلخواه (Custom)", callback_data="server_custom")],
@@ -2127,7 +2127,7 @@ async def show_tariffs(update: Update, context: ContextTypes.DEFAULT_TYPE):
     buttons.append([back_button("buy_service")])
 
     if server == "holland":
-        title = "🇳🇱 سرور هلند"
+        title = "سرویس تانل ⚡🚀"
         subtitle = "حجم مورد نظر را انتخاب کنید:"
     elif server == "unlimited":
         title = "💎 سرویس نامحدود"
@@ -2309,7 +2309,7 @@ async def show_duration_select(update: Update, context: ContextTypes.DEFAULT_TYP
     context.user_data["final_price"] = final
 
     if server == "holland":
-        server_name = "🇳🇱 سرور هلند"
+        server_name = "سرویس تانل ⚡🚀"
     else:
         server_name = "🌐 مولتی لوکیشن"
 
@@ -2459,7 +2459,7 @@ async def show_invoice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     selected_days = context.user_data.get("selected_days") or context.user_data.get("custom_days")
 
     if server == "holland":
-        server_name = "🇳🇱 سرور هلند"
+        server_name = "سرویس تانل ⚡🚀"
         plan_text = f"{vol} گیگ / {selected_days} روز" if selected_days else f"{vol} گیگ"
     elif server == "unlimited":
         server_name = "💎 سرویس نامحدود"
